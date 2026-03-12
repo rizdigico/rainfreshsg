@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-2xl ring-1 ring-black/5 shadow-sm rounded-2xl overflow-hidden;
+  }
+
+  .acrylic-card {
+    @apply bg-white/60 backdrop-blur-xl ring-1 ring-black/5 rounded-2xl overflow-hidden shadow-none;
+  }
+
+  .sensory-glass {
+    @apply bg-white/80 backdrop-blur-3xl ring-1 ring-black/5 shadow-sm overflow-hidden;
+  }
+
+  .micro-label {
+    @apply font-sans text-[9px] uppercase tracking-[0.25em] text-slate-500 font-semibold;
+  }
+
+  .heavy-transition {
+    @apply transition-all duration-700 ease-out;
+  }
+}
+
+body {
+  @apply bg-[#c1e9fd] text-slate-900 antialiased selection:bg-slate-200;
+}
+
+/* Hide scrollbar for horizontal scrolling areas */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
