@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rainfreshsg.com/sitemap.xml
+Sitemap: https://rainfresh.co/sitemap.xml
